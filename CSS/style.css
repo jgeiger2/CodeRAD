@@ -262,3 +262,143 @@ span.bg-color-6 {
 .plan-btn-wrapper {
     text-align: center;
 }
+
+.testimonials {
+    margin: var(--size-100) 0;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: var(--size-20);
+    margin: 0 auto;
+}
+
+.testimonials .block-text {
+    padding-right: 0;
+    text-align: center;
+    margin: var(--size-100) 0;
+}
+
+.testimonial-card {
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    padding: var(--size-30);
+}
+
+.testimonial-card.lg {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+
+.testimonial-card.lg .quote {
+    width: 70px;
+    float: right;
+    margin-top: var(--size-16)
+}
+
+.testimonial-card.md .bottom p {
+    font-size: var(--size-14);
+}
+
+.testimonial-card .top {
+    display: flex;
+    align-items: center;
+    padding-bottom: var(--size-10);
+}
+
+.testimonial-card img.profile {
+    width: 4.375rem;
+    border-radius: 50%;
+    margin-right: var(--size-20);
+}
+
+.testimonial-card.lg img.profile {
+    width: 5rem;
+}
+
+.top h4 {
+    margin-top: 0;
+    margin-bottom: var(--size-10);
+    font-weight: 600;
+    font-size: var(--size-18);
+}
+
+.bottom p {
+    margin: 0;
+    font-size: var(--size-16);
+    line-height: 1.6;
+}
+
+footer.bg-footer {
+    background-color: var(--footer);
+}
+
+footer .footer-bottom {
+    background-color: var(--footer-base);
+}
+
+footer .footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--size-50);
+    padding: var(--size-100) 0;
+}
+
+footer .footer-col {
+    justify-self: center;
+}
+
+.footer-top h5 {
+    color: var(--white);
+    font-weight: 500;
+    margin-bottom: var(--size-16);
+}
+
+.contact-info li {
+    color: var(--white);
+    margin-bottom: var(--size-10);
+}
+
+.contact-info li i {
+    width: var(--size-30);
+}
+
+.social-icons ul li {
+    display: inline-block;
+    margin-right: var(--size-16);
+}
+
+.social-icons ul li a {
+    color: var(--white);
+    font-size: var(--size-16);
+}
+
+.services-wrapper p {
+    color: #858497;
+}
+
+.recent-posts {
+    display: flex;
+    margin-bottom: var(--size-16);
+}
+
+.recent-posts .post-img-wrapper {
+    width: var(--size-100);
+    margin-right: var(1);
+}
+
+.post-inner h6 {
+    margin: 0;
+}
+
+.post-inner h6 a {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.post-inner span {
+    color: var(--font-color-light);
+    font-size: var(--size-10);
+}
