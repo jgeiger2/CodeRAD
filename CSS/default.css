@@ -20,7 +20,7 @@
     --size-20: 1.25rem;
     --size-30: 1.875rem;
     --size-40: 2.5rem;
-    --size-10: 3.125rem;
+    --size-50: 3.125rem;
     --size-100: 6.25rem;
     --size-150: 9.375rem;
 
@@ -118,4 +118,4 @@ img {
 
 @media (min-width: 760px) {
     .pricing-table, .testimonial-grid {max-width: 720px;}
-}d
+}
