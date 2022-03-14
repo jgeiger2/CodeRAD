@@ -4,7 +4,34 @@
     right: 0;
     left: 0;
     z-index: 500;
+    /* added padding - john */
+    padding: 0.5rem;
     transition: ease-in-out0.3s;
+}
+
+.navbar.sticky {
+    background: var(--white);
+    box-shadow: 0 0 20px rgba(48, 63, 100, 0.2);
+}
+
+.navbar.sticky .navbar-toggler span, .navbar.sticky .navbar-brand {
+    color: var(--font-color-dark);
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: var(--size-20);
+    top: var(--size-10);
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+    color: var(--white);
+    font-size: var(--size-20);
+    cursor: pointer;
+    pointer-events: none;
 }
 
 [aria-controls="navbarDropdown"] {
@@ -52,6 +79,7 @@
 
 .bg-header {
     background-image: url(../assets/bg-header-1.jpg);
+    padding: var(--size-150) 0;
 }
 
 .video-demo {
@@ -79,6 +107,10 @@
     color: var(--white);
 }
 
+.why-me {
+    padding: var(--size-150) 0;
+}
+
 .why-me-wrapper {
     display: flex;
     align-items: center;
@@ -86,6 +118,11 @@
 
 .why-me-wrapper div {
     flex: 1;
+}
+
+.why-me-wrapper .block-text {
+    padding-right: var(--size-100);
+    max-width: 35rem;
 }
 
 .block-text {
@@ -110,6 +147,8 @@
 .bg-contrast {
     background-color: var(--contrast);
     padding: var(--size-150) 0;
+    /* added b john */
+    margin: 0 auto;
 }
 
 .service-grid {
@@ -169,6 +208,8 @@ span.bg-color-6 {
 
 .video-demo .block-text h2, .video-demo .block-text p {
     color: var(--white);
+    /* added by John */
+    margin: var(--size-50) 0;
 }
 
 .video-btn {
@@ -204,6 +245,7 @@ span.bg-color-6 {
 .pricing-table {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    /* changed to size 18 from size 20 - john */
     gap: var(--size-18);
     margin: auto;
     align-items: flex-start;
@@ -212,7 +254,7 @@ span.bg-color-6 {
 .price-card {
     background-color: var(--white);
     border-radius: 8px;
-    padding: var(--size-16);
+    padding:var(--size-40) var(--size-16);
 }
 
 .price-card h3 {
@@ -257,10 +299,20 @@ span.bg-color-6 {
 
 .price-card .icon {
     float: right;
+    /* added font weight 600 - john */
+    font-weight: 600; 
 }
 
 .plan-btn-wrapper {
     text-align: center;
+}
+
+
+/* ask Jason about this - code refactor module 5 */
+
+.plan-btn-wrapper a {
+    /* width: 100%; */
+    display: block;
 }
 
 .testimonials {
@@ -348,12 +400,15 @@ footer .footer-top {
 
 footer .footer-col {
     justify-self: center;
+    /* disabled max-width - john */
+    /* max-width: 250px; */
 }
 
 .footer-top h5 {
     color: var(--white);
     font-weight: 500;
     margin-bottom: var(--size-16);
+    font-size: var(--size-16);
 }
 
 .contact-info li {
@@ -379,6 +434,10 @@ footer .footer-col {
     color: #858497;
 }
 
+.services-wrapper h5 {
+    margin-bottom: initial;
+}
+
 .recent-posts {
     display: flex;
     margin-bottom: var(--size-16);
@@ -396,9 +455,52 @@ footer .footer-col {
 .post-inner h6 a {
     color: var(--white);
     font-weight: 600;
+    font-size: 00.75rem;
 }
 
 .post-inner span {
     color: var(--font-color-light);
     font-size: var(--size-10);
+}
+
+.footer-bottom-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-bottom {
+    padding: var(--size-16) 0;
+}
+
+.copyright p {
+    color: var(--font-color-light);
+}
+
+.footer-bottom-links ul li {
+    display: inline-block;
+    margin-right: var(--size-10);
+    color: var(--white);
+}
+
+.footer-bottom-links ul li a {
+    color: var(--white);
+}
+
+#scrollUp {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%);
+    color: var(--white);
+    font-size: var(--size-20);
+    height: var(--size-50);
+    width: var(--size-50);
+    line-height: var(--size-50);
+    position: fixed;
+    bottom: var(--size-30);
+    right: var(--size-30);
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 100;
 }
